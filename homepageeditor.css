@@ -1,0 +1,244 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hover-area {
+    position: relative;
+    left: 550px;
+    top: 20px;
+    width: 230px;
+}
+
+.hover-area img {
+    height: 250px;
+}
+
+.options {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: -10px;
+    /* Adjusted to create a 10px gap to the right */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 120px;
+    /* Increased width to accommodate the gap */
+    text-align: center;
+}
+
+.hover-area:hover .options {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.option {
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+    background-color: #8d021f;
+    color: #fff;
+    border: 1px solid #8d021f;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.option:hover {
+    background-color: white;
+    color: black;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.ranking-table {
+    margin-top: 50px;
+    background-image: url(ss.jpg);
+    width: 772px;
+    height: 582px;
+    position: relative;
+    left: 280px;
+}
+
+.option a {
+    text-decoration: none;
+    color: white;
+}
+
+.option a:hover {
+    color: black;
+}
+#posts-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three posts per row */
+    gap: 10px;
+}
+
+.post {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #8d021f;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+}   
+.post h2 {
+    position: relative;
+    top: 5px;
+    left: 120px;
+}
+
+.post h3 {
+    position: relative;
+    top: 5px;
+    left: 70px;
+}
+
+span {
+    color: #8d021f;
+}
+
+.post .win {
+    position: relative;
+    top: 10px;
+}
+.post:hover {
+    background-color: white;
+    color: #8d021f;
+    border: 1px solid #8d021f;
+    transition: 0.5s ease-in;
+}
+@media (max-width: 425px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .hover-area {
+        position: relative;
+        left: 90px;
+        top: 20px;
+        width: 230px;
+    }
+
+    .hover-area img {
+        height: 250px;
+    }
+
+    .options {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: -10px;
+        /* Adjusted to create a 10px gap to the right */
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 5px;
+        width: 120px;
+        /* Increased width to accommodate the gap */
+        text-align: center;
+    }
+
+    .hover-area:hover .options {
+        display: block;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .option {
+        cursor: pointer;
+        padding: 5px;
+        margin: 5px;
+        background-color: #8d021f;
+        color: #fff;
+        border: 1px solid #8d021f;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .option:hover {
+        background-color: white;
+        color: black;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .ranking-table {
+        background-image: url(sss.jpg);
+        width: 325px;
+        height: 1212px;
+        position: relative;
+        left: 20px;
+    }
+    .rank{
+        width: 100%;
+        position: absolute;
+    }
+    .option a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .option a:hover {
+        color: black;
+    }
+    #posts-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .post {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #8d021f;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 50px;
+    }   
+    .post h2 {
+        position: relative;
+        top: 5px;
+        left: 70px;
+    }
+    
+    .post h3 {
+        position: relative;
+        top: 5px;
+        left: 10px;
+    }
+    
+    span {
+        color: #8d021f;
+    }
+    
+    .post .win {
+        position: relative;
+        top: 10px;
+    }
+    .post:hover {
+        background-color: white;
+        color: #8d021f;
+        border: 1px solid #8d021f;
+        transition: 0.5s ease-in;
+    }
+}
+
+
